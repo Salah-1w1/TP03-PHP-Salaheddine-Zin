@@ -1,7 +1,7 @@
 <?php
 /*
  * Auteur : Salaheddine Zin
- * Objectif : Partie 3 (tableaux : création, affichage, statistiques, tri, opérateurs)
+ * Objectif : Partie 3 (tableaux) avec interface factorisée (Partie 4.1)
  * Date : 18/10/2026
  */
 
@@ -49,6 +49,9 @@ $modules = ["Programmation Web", "Bases de données", "Algorithmique"];
     <title>Partie 3 - Tableaux</title>
 </head>
 <body>
+    <?php include 'includes/entete_inc.php'; ?>
+    <?php include 'includes/menu_inc.php'; ?>
+
     <h1>Partie 3 : tableaux</h1>
 
     <h2>Exercice 3.1 : création</h2>
@@ -176,14 +179,13 @@ $modules = ["Programmation Web", "Bases de données", "Algorithmique"];
     </pre>
     <?php
     /*
-     * Prédictions et explications :
-     * - $a + $b (union) : garde les clés de $a, puis ajoute celles de $b
-     *   qui n'existent pas déjà. Résultat : ["x" => 1, "y" => 2].
-     * - $a == $b : true, car les deux tableaux ont les mêmes paires
-     *   clé/valeur, quel que soit l'ordre.
-     * - $a === $b : false, car === exige aussi le même ordre et les
-     *   mêmes types ; ici l'ordre des clés est différent.
+     * $a + $b (union) : garde les clés de $a, puis ajoute celles de $b
+     * qui n'existent pas déjà. Résultat : ["x" => 1, "y" => 2].
+     * $a == $b : true (mêmes paires clé/valeur, quel que soit l'ordre).
+     * $a === $b : false (=== exige aussi le même ordre).
      */
     ?>
+
+    <?php include 'includes/pied_inc.php'; ?>
 </body>
 </html>
