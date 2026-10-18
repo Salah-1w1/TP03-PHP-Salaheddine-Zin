@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4.2 - Formulaire GET</title>
+</head>
+<body>
+    <h1>Exercice 4.2 : formulaire GET</h1>
+
+    <form action="info.php" method="get">
+        <p>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom">
+        </p>
+        <p>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom">
+        </p>
+        <p>
+            <label for="sexe">Sexe :</label>
+            <select id="sexe" name="sexe">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </p>
+        <p><button type="submit">Envoyer</button></p>
+    </form>
+</body>
+</html>
