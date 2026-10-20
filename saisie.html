@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4.3 - Saisie des notes</title>
+</head>
+<body>
+    <h1>Exercice 4.3 : saisie des notes (POST)</h1>
+
+    <form action="traitement.php" method="post">
+        <p>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom">
+        </p>
+        <p>
+            <label for="note_info">Note Info :</label>
+            <input type="number" id="note_info" name="note_info" step="0.01">
+        </p>
+        <p>
+            <label for="note_math">Note Math :</label>
+            <input type="number" id="note_math" name="note_math" step="0.01">
+        </p>
+        <p><button type="submit">Envoyer</button></p>
+    </form>
+
+    <p><a href="liste.php">Voir la liste</a></p>
+</body>
+</html>
