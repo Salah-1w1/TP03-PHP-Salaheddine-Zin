@@ -1,0 +1,20 @@
+[
+    {
+        "nom": "zin",
+        "info": 15,
+        "math": 10,
+        "moyenne": 12.5
+    },
+    {
+        "nom": "hassan",
+        "info": 20,
+        "math": 1,
+        "moyenne": 10.5
+    },
+    {
+        "nom": "saad",
+        "info": 10,
+        "math": 3,
+        "moyenne": 6.5
+    }
+]
